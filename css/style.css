@@ -212,12 +212,82 @@ button {
 }
 
 .banner {
+    display: none;
+}
+/*----------------
+    SECT PRESENTATION
+------------------*/
+.presentation {
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+.presentation h2 {
+    color: black;
+    font-weight: 500;
+    font-size: 26px;
+}
 
+.presentation hr {
+    width: 10%;
+    color: #f7972e;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.sect-pres {
+    text-align: center;
+}
+
+.sect-pres p {
+    text-align: left;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.img-pres {
+    max-width: 60%;
+    padding-bottom: 10px;
 }
 
 /*----------------
     FOOTER
 ------------------*/
+footer {
+    width: 100%;
+    background-color: #7c69a4;
+    color: white;
+}
+
+.footer-cont {
+    padding-top: 20px;
+}
+.footer-cont h4 {
+    padding-bottom: 15px;
+}
+.footer-cont,
+.footer-list  {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+.footer-list ul {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-list li {
+    list-style: none;
+}
+
+.footer-list li a {
+    color: inherit;
+    text-decoration: underline;
+}
+
 /*----------------
     RESPONSIVE
 ------------------*/
@@ -231,6 +301,15 @@ button {
     }
     .social .btn span {
         /* display: none; */
+    }
+    .utility .banner {
+        display: inline;
+    }
+    .sect-pres .img-pres {
+        float: left;
+        padding-right: 10px;
+        padding-bottom: 10px;
+        max-width: 30%;
     }
     
 }
@@ -247,9 +326,10 @@ button {
         margin-right: 90px;
         margin-bottom: 20px;
     }
-     .info li:nth-child(4) {
+    .info li:nth-child(4) {
         margin-right: 80px;
      }
+    
 }
 
 
@@ -267,6 +347,23 @@ button {
     .social .btn span {
         display: inline;
     }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .footer-cont {
+        text-align: left;
+        padding: 15px;
+    }
+    .footer-list {
+        text-align: right;
+    }
+    .footer-cont,
+    .footer-list  {
+    width: 100%;
+} 
 
 }
 

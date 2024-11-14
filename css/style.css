@@ -24,7 +24,7 @@
     COMMONS
 ------------------*/
 .img-fluid {
-    max-width: 100%;
+    width: 100%;
 }
 
 /*----------------
@@ -144,6 +144,10 @@ main {
 
 .intro h2 span {
     display: none;
+}
+
+.intro .col-firstup{
+
 }
 
 .intro .col-firstup,
@@ -336,10 +340,10 @@ footer {
 /* DESKTOP DA 992 A INFINITO*/
 @media  screen and (min-width: 992px) {
     .intro .col-firstup {
-        width: 70%;
+        max-width: 70%;
     }
     .intro .col-seconddown {
-        width: 30%;
+        max-width: 30%;
     }
     .intro .col-seconddown h2 {
         padding-top: 20px;
